@@ -30,7 +30,7 @@
 		<jsp:include page="layout/nav.jsp"></jsp:include>
 	</nav>
 	<main id="section">
-		<h3 class="title">홈쇼핑 회원정보 수정</h3>
+		<h3 class="title">홈쇼핑 회원정보 조회</h3>
 		<form name="data" action="update_p.jsp" method="post" onsubmit="return checkValue()">
 			<table class="table_line">
 				
