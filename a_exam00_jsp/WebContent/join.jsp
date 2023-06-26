@@ -76,7 +76,7 @@
 				</tr>
 				<tr>
 					<th>회원성명</th>
-					<td><input type="text" name="custname" size="10"></td>
+					<td><input type="text" name="custname" size="10" autofocus></td>
 				</tr>
 				<tr>
 					<th>회원전화</th>
