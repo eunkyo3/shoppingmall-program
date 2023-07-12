@@ -70,7 +70,7 @@
 						<td>
 							<input type="button" value="수정" onclick="document.location.href='update.jsp?custno=<%= rs.getString("custno")%>'">
 							<input type="button" value="삭제" onclick="checkDel(<%= rs.getString("custno")%>);">
-							<input type="button" value="조회">
+							<input type="button" value="조회" onclick="document.location.href='z_inquiry.jsp?custno=<%= rs.getString("custno")%>'">
 						</td>
 					</tr>
 				<%
