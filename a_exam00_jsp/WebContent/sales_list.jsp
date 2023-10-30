@@ -6,9 +6,9 @@
 	String sql="SELECT a.custno 회원번호, "
 			+ " a.custname 회원성명, " 
 			+ " decode(a.grade, 'A', 'VIP', 'B', '일반', 'C', '직원') 고객등급, "
-			+ " sum(price) 매출 "
+			+ " sum(nvl(price, 0)) 매출 "
   + " FROM member_tbl_02 a, money_tbl_02 b "
-+ " WHERE a.custno = b.custno " 
++ " WHERE a.custno = b.custno and price is not null " 
 + " GROUP BY a.custno, a.custname, a.grade "
 + " order by 매출 desc";
 
